@@ -6,6 +6,8 @@ const helmet = require('helmet');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const {join} = require('path');
+const {Configuration, SDK} = require('@corbado/node-sdk');
+const corbado = new SDK(new Configuration(process.env.CORBADO_PROJECT_ID, process.env.CORBADO_API_SECRET));
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
