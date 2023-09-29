@@ -63,3 +63,9 @@ typings/
 # Editor directories and files
 .idea
 .vscode
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
